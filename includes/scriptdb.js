@@ -127,7 +127,7 @@ var ScriptDatabase = {
         stmt.execute();
       });
 
-      AddonManagerPrivate.callInstallListeners("onNewInstall", null,
+      AddonManagerPrivate.callInstallListeners("onExternalInstall", null,
                                                 new Script(data), null, false);
     }
     catch (e) {
